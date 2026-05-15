@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { motion } from 'framer-motion';
-import { Music, CalendarDays, Mail, PlayCircle, InstagramIcon, YoutubeIcon, FacebookIcon, Flame } from "lucide-react";
+import { Music, CalendarDays, Mail, PlayCircle, Flame } from "lucide-react";
 import './styles.css';
 
 function Button({ children, href, variant = 'solid' }) {
@@ -99,8 +99,7 @@ function App() {
             <Button variant="outline">EPK Coming Soon</Button>
           </div>
           <div className="socials" aria-label="Social links coming soon">
-            <InstagramIcon /> <YoutubeIcon /> <FacebookIcon />
-            <span>Social Links Coming Soon</span>
+            <span className="text-sm uppercase tracking-[0.3em] text-zinc-500">Social Links Coming Soon</span>
           </div>
         </section>
       </main>
