@@ -45,14 +45,14 @@ function App() {
 
           <motion.div initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.1 }} className="hero-image-wrap">
             <div className="hero-image-glow" />
-            <img src="/public/scraping-penny-official-band-picture-2026.jpeg" alt="Scraping Penny official 2026 band picture" className="hero-image" />
+            <img src="/scraping-penny-official-band-picture-2026.jpeg" alt="Scraping Penny official 2026 band picture" className="hero-image" />
           </motion.div>
         </section>
 
         <section id="music" className="section">
           <p className="eyebrow">Music</p>
           <h2>Latest Releases</h2>
-          <div className="cards three">
+          <div className="cards thre
             {['Music Coming Soon', 'Streaming Links Coming Soon', 'Video Coming Soon'].map((title) => (
               <article className="card" key={title}>
                 <Music className="card-icon" size={34} />
