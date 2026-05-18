@@ -45,7 +45,7 @@ function App() {
 
           <motion.div initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.1 }} className="hero-image-wrap">
             <div className="hero-image-glow" />
-            <img src="/public/scraping-penny-official-band-picture-2026.jpeg" "Scraping Penny official 2026 band picture" className="hero-image" />
+            <img src="/scraping-penny-official-band-picture-2026.jpeg" "Scraping Penny official 2026 band picture" className="hero-image" />
           </motion.div>
         </section>
 
