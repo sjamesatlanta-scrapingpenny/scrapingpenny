@@ -45,7 +45,7 @@ function App() {
 
           <motion.div initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.1 }} className="hero-image-wrap">
             <div className="hero-image-glow" />
-            <img src="/scraping-penny-official-band-picture-2026.jpeg" alt="Scraping Penny official 2026 band picture" className="hero-image" />
+            <img src="/public/ChatGPT Image May 15, 2026, 08_15_06 PM.png "Scraping Penny official 2026 band picture" className="hero-image" />
           </motion.div>
         </section>
 
