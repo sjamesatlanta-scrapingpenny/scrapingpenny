@@ -52,7 +52,7 @@ function App() {
         <section id="music" className="section">
           <p className="eyebrow">Music</p>
           <h2>Latest Releases</h2>
-          <div className="cards thre
+          <div className="cards three">
             {['Music Coming Soon', 'Streaming Links Coming Soon', 'Video Coming Soon'].map((title) => (
               <article className="card" key={title}>
                 <Music className="card-icon" size={34} />
