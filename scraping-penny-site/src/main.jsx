@@ -145,7 +145,7 @@ function App() {
         </section>
         <section id="media" className="section">
           <p className="eyebrow">Media</p>
-          <h2>Photos & Video</h2>
+          <h2> Bio's Photos & Video</h2>
 
           <div className="cards two">
             <article className="card media-card">
@@ -155,7 +155,9 @@ function App() {
             </article>
 
             <article className="card">
-              <h3>Video / Promo Reel</h3>
+              <h3>Band Bio's</h3>
+              <p>coming soon.</p>
+              <h3>Videos & Promo Reels</h3>
               <p>Live YouTube videos and promo clips coming soon.</p>
             </article>
           </div>
