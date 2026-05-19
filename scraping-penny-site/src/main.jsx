@@ -55,8 +55,8 @@ function App() {
             <h1>90's & 00's Hard Rock Forged In Fire</h1>
             <p className="lead">
               Scraping Penny is an Atlanta-based heavy metal  / hard rock band performing original and cover music
-              showcasing influences of the 1990's-2000'sh reflecting and leveraging their relationships that helped shape 
-              their own original style.  With grinding riffs, thunderous rhythm, and high-voltage stage presence, \
+              showcasing their influences of the 1990's-2000's reflecting and leveraging their industry relationships
+              that helped meld their own original style.  With grinding riffs, thunderous rhythm, and high-voltage stage presence, 
               Scraping Penny delivers the fire.... Let the Sparks Fly
             </p>
 
@@ -168,7 +168,7 @@ function App() {
           <p className="eyebrow">Booking & Contact</p>
           <h2>Bring Scraping Penny To The Stage</h2>
           <p>
-            For booking, venue inquiries, and collaborations, contact Stephen James directly at 404,307.6038 or{" "}
+            For booking, venue inquiries, and collaborations, contact Stephen James directly at 404.307.6038 or{" "}
             <a href="mailto:sjames.atlanta@gmail.com">sjames.atlanta@gmail.com</a>
           </p>
 
