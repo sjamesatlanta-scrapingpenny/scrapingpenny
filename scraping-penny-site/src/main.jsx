@@ -73,7 +73,39 @@ function App() {
             </div>
           </div>
         </section>
+<section id="live-snippets" className="section">
+  <p className="eyebrow">Live in Atlanta</p>
+  <h2>Sound Snippets</h2>
 
+  <div className="cards two">
+
+    <article className="card">
+      <h3>Live at La Estacion — Cinco de Mayo 2026</h3>
+
+      <p>
+        Raw live bar recording from a recent Scraping Penny
+        performance in Southwest Atlanta.
+      </p>
+
+      <audio controls className="audio-player">
+        <source
+          src="/audio/live/la-estacion-live-snippet.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+    </article>
+
+    <article className="card">
+      <h3>More Atlanta Live Snippets Coming Soon</h3>
+
+      <p>
+        Additional live cover-band performances and promo clips
+        from Atlanta-area venues will be added here.
+      </p>
+    </article>
+
+  </div>
+</section>
         <section id="media" className="section">
           <p className="eyebrow">Media</p>
           <h2>Photos & Video</h2>
