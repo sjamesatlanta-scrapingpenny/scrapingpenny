@@ -182,37 +182,7 @@ function App() {
 
           </div>
 
-        </section>
-
-        {/* SHOWS */}
-        <section id="shows" className="section">
-
-          <p className="eyebrow">
-            Tour
-          </p>
-
-          <h2>
-            Upcoming Shows
-          </h2>
-
-          <div className="show-list">
-
-            <div className="show-row">
-
-              <span>
-                <CalendarDays size={20} />
-                Show Dates Coming Soon
-              </span>
-
-              <Button variant="outline">
-                Tickets Soon
-              </Button>
-
-            </div>
-
-          </div>
-
-        </section>
+        </section>    
 
         {/* LIVE SNIPPETS */}
         <section id="live-snippets" className="section">
@@ -266,7 +236,35 @@ function App() {
           </div>
 
         </section>
+  {/* SHOWS */}
+        <section id="shows" className="section">
 
+          <p className="eyebrow">
+            Tour
+          </p>
+
+          <h2>
+            Upcoming Shows
+          </h2>
+
+          <div className="show-list">
+
+            <div className="show-row">
+
+              <span>
+                <CalendarDays size={20} />
+                Show Dates Coming Soon
+              </span>
+
+              <Button variant="outline">
+                Tickets Soon
+              </Button>
+
+            </div>
+
+          </div>
+
+        </section>
         {/* MEDIA */}
         <section id="media" className="section">
 
