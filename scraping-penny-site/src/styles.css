@@ -212,14 +212,29 @@ h2 {
   border-radius: 36px;
 }
 
+.hero {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 70px 40px 90px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.45fr;
+  gap: 70px;
+  align-items: center;
+  min-height: 82vh;
+}
+
+h1 {
+  font-size: clamp(4rem, 6.2vw, 7rem);
+  max-width: 560px;
+}
+
 .hero-image {
   position: relative;
   display: block;
   width: 100%;
-  min-height: 520px;
-  max-height: 720px;
-  aspect-ratio: 16 / 9;
+  height: clamp(520px, 52vw, 760px);
   object-fit: cover;
+  object-position: center;
   border-radius: 32px;
   border: 1px solid rgba(249,115,22,.36);
   box-shadow: 0 30px 90px rgba(67, 20, 7, .75);
