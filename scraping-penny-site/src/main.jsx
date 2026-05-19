@@ -54,9 +54,10 @@ function App() {
             <p className="eyebrow">2026 Official Launch</p>
             <h1>90's & 00's Hard Rock Forged In Fire</h1>
             <p className="lead">
-              Scraping Penny is an Atlanta-based 90s and 2000s hard rock band that performs covers from that era
-              while showcasing influences and industry relationships that helped shape their own original heavy metal style.
-              With grinding riffs, thunderous rhythm, and high-voltage stage presence, Scraping Penny delivers the fire.
+              Scraping Penny is an Atlanta-based heavy metal  / hard rock band performing original and cover music
+              showcasing influences of the 1990's-2000'sh reflecting and leveraging their relationships that helped shape 
+              their own original style.  With grinding riffs, thunderous rhythm, and high-voltage stage presence, \
+              Scraping Penny delivers the fire.... Let the Sparks Fly
             </p>
 
             <div className="actions">
