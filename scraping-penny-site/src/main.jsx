@@ -272,7 +272,7 @@ function App() {
           </p>
 
           <h2>
-            Photos & Video
+            Bio's Photos & Video
           </h2>
 
           <div className="cards two">
@@ -328,7 +328,7 @@ function App() {
             For booking, venue inquiries, and collaborations,
             contact the band directly at{" "}
             <a href="mailto:sjames.atlanta@gmail.com">
-              sjames.atlanta@gmail.com
+              Stephen Jamees 404.307.6038 sjames.atlanta@gmail.com
             </a>
           </p>
 
