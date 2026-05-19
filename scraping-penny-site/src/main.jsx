@@ -44,7 +44,7 @@ function App() {
         <section className="hero">
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="hero-copy">
             <p className="eyebrow">2026 Official Launch</p>
-            <h1>90s Hard Rock Forged in Fire</h1>
+            <h1>90's 00's Hard Rock Forged in Fire</h1>
             <p className="lead">Scraping Penny is a 90s and 2000s hard rock cover band with original heavy metal music, a dark molten-metal visual style, grinding riffs, thunderous rhythm, and a high-voltage stage presence.</p>
             <div className="actions">
               <Button href="#music"><PlayCircle size={20} /> Listen Now</Button>
