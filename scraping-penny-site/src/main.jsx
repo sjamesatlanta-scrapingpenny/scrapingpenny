@@ -49,10 +49,10 @@ function App() {
           </motion.div>
         </section>
 
-        <section id="music" className="section">
-          <p className="eyebrow">Music</p>
-          <h2>Latest Releases</h2>
-          <div className="cards two">
+        </div>
+        </section>
+
+<section id="shows" className="section">
 
   <article className="card">
     <h3>Original Track 1</h3>
