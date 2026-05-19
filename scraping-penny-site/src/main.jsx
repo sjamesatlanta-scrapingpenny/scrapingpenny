@@ -92,9 +92,11 @@ function App() {
             </h1>
 
             <p className="lead">
-              Scraping Penny is a 90s and 2000s hard rock cover band
-              with original heavy metal music, grinding riffs,
-              thunderous rhythm, and a high-voltage stage presence.
+              Forged in fire and built for the stage, Scraping Penny brings together
+              thunderous rhythm, screaming guitars, and relentless live energy inspired by
+              the biggest hard rock acts of the 90s and 2000s. From crowd-favorite covers
+              to original heavy metal tracks, every show is designed to hit hard and leave
+              sparks flying.
             </p>
 
             <div className="actions">
