@@ -92,11 +92,12 @@ function App() {
             </h1>
 
             <p className="lead">
-              Forged in fire and built for the stage, Scraping Penny brings together
-              thunderous rhythm, screaming guitars, and relentless live energy inspired by
-              the biggest hard rock acts of the 90s and 2000s. From crowd-favorite covers
-              to original heavy metal tracks, every show is designed to hit hard and leave
-              sparks flying.
+              <p className="lead">
+              Dark. Loud. Unfiltered. Scraping Penny fuses the raw power of 90s hard rock
+              with modern heavy metal intensity. Known for explosive live shows, molten-fire
+              visuals, and grinding riffs, the band delivers a soundtrack built for packed
+              bars, late nights, and full-volume crowds.....Let the SPARKS FLY
+</p>
             </p>
 
             <div className="actions">
