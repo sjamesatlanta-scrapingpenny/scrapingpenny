@@ -90,7 +90,7 @@ function App() {
       <audio controls className="audio-player">
         <source
           src="/audio/live/la-estacion-live-snippet.mp3"
-          type="audio/mp3"
+          type="audio/mpeg"
         />
       </audio>
     </article>
