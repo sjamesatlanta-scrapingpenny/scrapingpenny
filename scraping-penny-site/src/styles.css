@@ -399,3 +399,72 @@ footer {
     padding: 30px 22px;
   }
 }
+.spark-layer {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 32px;
+  pointer-events: none;
+}
+
+.spark-layer span {
+  position: absolute;
+  left: 26%;
+  bottom: 18%;
+  width: 220px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(255,255,255,.95), rgba(255,145,0,.95), transparent);
+  box-shadow: 0 0 14px rgba(255,120,0,.9);
+  transform: rotate(-10deg);
+  opacity: 0;
+  animation: sparkFly 1.7s linear infinite;
+}
+
+.spark-layer span:nth-child(2) {
+  bottom: 22%;
+  animation-delay: .25s;
+  transform: rotate(-6deg);
+  width: 170px;
+}
+
+.spark-layer span:nth-child(3) {
+  bottom: 26%;
+  animation-delay: .5s;
+  transform: rotate(-14deg);
+  width: 260px;
+}
+
+.spark-layer span:nth-child(4) {
+  bottom: 15%;
+  animation-delay: .75s;
+  transform: rotate(-3deg);
+  width: 130px;
+}
+
+.spark-layer span:nth-child(5) {
+  bottom: 30%;
+  animation-delay: 1s;
+  transform: rotate(-18deg);
+  width: 210px;
+}
+
+.spark-layer span:nth-child(6) {
+  bottom: 20%;
+  animation-delay: 1.25s;
+  transform: rotate(-9deg);
+  width: 300px;
+}
+
+@keyframes sparkFly {
+  0% {
+    opacity: 0;
+    transform: translateX(0) translateY(0) scaleX(.2) rotate(-10deg);
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(520px) translateY(-110px) scaleX(1) rotate(-10deg);
+  }
+}
