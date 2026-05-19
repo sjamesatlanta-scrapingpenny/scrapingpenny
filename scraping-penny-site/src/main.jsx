@@ -132,7 +132,7 @@ function App() {
           <div className="cards two">
             <article className="card">
               <h3>Live at La Estacion — Cinco de Mayo 2026</h3>
-              <p>Raw live bar recording from a recent Scraping Penny performance in Southwest Atlanta.</p>
+              <p>Raw live band bar recording from a recent Scraping Penny performance in Southwest Atlanta.</p>
               <audio controls className="audio-player">
                 <source src="/audio/live/la-estacion-live-snippet.mp3" type="audio/mpeg" />
               </audio>
