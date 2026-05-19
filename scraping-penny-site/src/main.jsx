@@ -10,6 +10,14 @@ function Button({ children, href, variant = 'solid' }) {
 }
 
 function App() {
+  const originals = [
+    ["Better Off Without Me", "/audio/originals/Better Off Without Me.mp3"],
+    ["Beyond the Veil", "/audio/originals/Beyond the Veil.mp3"],
+    ["Persecuted", "/audio/originals/Persecuted.mp3"],
+    ["Mean Green Machine", "/audio/originals/Mean Green Machine.mp3"],
+    ["Walking Into the Son", "/audio/originals/Walking Into the Son.mp3"],
+  ];
+
   return (
     <div className="site">
       <div className="bg-glow" />
@@ -26,6 +34,7 @@ function App() {
         <nav className="nav">
           <a href="#music">Music</a>
           <a href="#shows">Shows</a>
+          <a href="#live-snippets">Live</a>
           <a href="#media">Media</a>
           <a href="#contact">Booking</a>
         </nav>
@@ -36,9 +45,9 @@ function App() {
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="hero-copy">
             <p className="eyebrow">2026 Official Launch</p>
             <h1>90s Hard Rock Forged in Fire</h1>
-            <p className="lead">Scraping Penny is a 90s hard rock band with a dark, molten-metal visual style, grinding riffs, thunderous rhythm, and a high-voltage stage presence.</p>
+            <p className="lead">Scraping Penny is a 90s and 2000s hard rock cover band with original heavy metal music, a dark molten-metal visual style, grinding riffs, thunderous rhythm, and a high-voltage stage presence.</p>
             <div className="actions">
-              <Button href="#music"><PlayCircle size={20} /> Listen Soon</Button>
+              <Button href="#music"><PlayCircle size={20} /> Listen Now</Button>
               <Button href="#shows" variant="outline">View Shows</Button>
             </div>
           </motion.div>
@@ -49,47 +58,21 @@ function App() {
           </motion.div>
         </section>
 
-        </div>
+        <section id="music" className="section">
+          <p className="eyebrow">Original Music</p>
+          <h2>Scraping Penny Originals</h2>
+          <div className="cards two">
+            {originals.map(([title, src]) => (
+              <article className="card" key={title}>
+                <Music className="card-icon" size={34} />
+                <h3>{title}</h3>
+                <audio controls className="audio-player">
+                  <source src={src} type="audio/mpeg" />
+                </audio>
+              </article>
+            ))}
+          </div>
         </section>
-
-<section id="shows" className="section">
-
-  <article className="card">
-    <h3>Original Track 1</h3>
-    <audio controls className="audio-player">
-      <source src="/audio/originals/Better Off Without Me.mp3" type="audio/mpeg" />
-    </audio>
-  </article>
-
-  <article className="card">
-    <h3>Original Track 2</h3>
-    <audio controls className="audio-player">
-      <source src="/audio/originals/Beyond the Veil.mp3" type="audio/mpeg" />
-    </audio>
-  </article>
-
-  <article className="card">
-    <h3>Original Track 3</h3>
-    <audio controls className="audio-player">
-      <source src="/audio/originals/Mean Green Machine.mp3" type="audio/mpeg" />
-    </audio>
-  </article>
-
-  <article className="card">
-    <h3>Original Track 4</h3>
-    <audio controls className="audio-player">
-      <source src="/audio/originals/Persecuted.mp3" type="audio/mpeg" />
-    </audio>
-  </article>
-
-  <article className="card">
-    <h3>Original Track 5</h3>
-    <audio controls className="audio-player">
-      <source src="/audio/originals/Walking Into the Son.mp3" type="audio/mpeg" />
-    </audio>
-  </article>
-
-</div>
 
         <section id="shows" className="section">
           <p className="eyebrow">Tour</p>
@@ -101,39 +84,26 @@ function App() {
             </div>
           </div>
         </section>
-<section id="live-snippets" className="section">
-  <p className="eyebrow">Live in Atlanta</p>
-  <h2>Sound Snippets</h2>
 
-  <div className="cards two">
+        <section id="live-snippets" className="section">
+          <p className="eyebrow">Live in Atlanta</p>
+          <h2>Sound Snippets</h2>
+          <div className="cards two">
+            <article className="card">
+              <h3>Live at La Estacion — Cinco de Mayo 2026</h3>
+              <p>Raw live bar recording from a recent Scraping Penny performance in Southwest Atlanta.</p>
+              <audio controls className="audio-player">
+                <source src="/audio/live/la-estacion-live-snippet.mp3" type="audio/mpeg" />
+              </audio>
+            </article>
 
-    <article className="card">
-      <h3>Live at La Estacion — Cinco de Mayo 2026</h3>
+            <article className="card">
+              <h3>More Atlanta Live Snippets Coming Soon</h3>
+              <p>Additional live cover-band performances and promo clips from Atlanta-area venues will be added here.</p>
+            </article>
+          </div>
+        </section>
 
-      <p>
-        Raw live bar recording from a recent Scraping Penny
-        performance in Southwest Atlanta.
-      </p>
-
-      <audio controls className="audio-player">
-        <source
-          src="/audio/live/la-estacion-live-snippet.mp3"
-          type="audio/mpeg"
-        />
-      </audio>
-    </article>
-
-    <article className="card">
-      <h3>More Atlanta Live Snippets Coming Soon</h3>
-
-      <p>
-        Additional live cover-band performances and promo clips
-        from Atlanta-area venues will be added here.
-      </p>
-    </article>
-
-  </div>
-</section>
         <section id="media" className="section">
           <p className="eyebrow">Media</p>
           <h2>Photos & Video</h2>
@@ -159,7 +129,7 @@ function App() {
             <Button variant="outline">EPK Coming Soon</Button>
           </div>
           <div className="socials" aria-label="Social links coming soon">
-            <span className="text-sm uppercase tracking-[0.3em] text-zinc-500">Social Links Coming Soon</span>
+            <span>Social Links Coming Soon</span>
           </div>
         </section>
       </main>
