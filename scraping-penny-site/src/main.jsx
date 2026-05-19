@@ -114,18 +114,7 @@ function App() {
           </div>
         </section>
 
-        <section id="shows" className="section">
-          <p className="eyebrow">Tour</p>
-          <h2>Upcoming Shows</h2>
-          <div className="show-list">
-            <div className="show-row">
-              <span><CalendarDays size={20} /> Show Dates Coming Soon</span>
-              <Button variant="outline">Tickets Soon</Button>
-            </div>
-          </div>
-        </section>
-
-        <section id="live-snippets" className="section">
+               <section id="live-snippets" className="section">
           <p className="eyebrow">Live In Atlanta</p>
           <h2>Sound Snippets</h2>
 
@@ -144,7 +133,16 @@ function App() {
             </article>
           </div>
         </section>
-
+ <section id="shows" className="section">
+          <p className="eyebrow">Tour</p>
+          <h2>Upcoming Shows</h2>
+          <div className="show-list">
+            <div className="show-row">
+              <span><CalendarDays size={20} /> Show Dates Coming Soon</span>
+              <Button variant="outline">Tickets Soon</Button>
+            </div>
+          </div>
+        </section>
         <section id="media" className="section">
           <p className="eyebrow">Media</p>
           <h2>Photos & Video</h2>
