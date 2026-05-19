@@ -16,6 +16,7 @@ function App() {
     ["Persecuted", "/audio/originals/Persecuted.mp3"],
     ["Mean Green Machine", "/audio/originals/Mean Green Machine.mp3"],
     ["Walking Into the Son", "/audio/originals/Walking Into the Son.mp3"],
+    ["Worth The Load", "/audio/originals/Worth The Load.mp3"]
   ];
 
   const workingOn = [
