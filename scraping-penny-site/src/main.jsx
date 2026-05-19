@@ -1,15 +1,35 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { motion } from 'framer-motion';
-import { Music, CalendarDays, Mail, PlayCircle, Flame } from "lucide-react";
+import {
+  Music,
+  CalendarDays,
+  Mail,
+  PlayCircle,
+  Flame
+} from "lucide-react";
+
 import './styles.css';
 
 function Button({ children, href, variant = 'solid' }) {
-  const className = variant === 'outline' ? 'btn btn-outline' : 'btn btn-solid';
-  return href ? <a className={className} href={href}>{children}</a> : <button className={className}>{children}</button>;
+  const className =
+    variant === 'outline'
+      ? 'btn btn-outline'
+      : 'btn btn-solid';
+
+  return href ? (
+    <a className={className} href={href}>
+      {children}
+    </a>
+  ) : (
+    <button className={className}>
+      {children}
+    </button>
+  );
 }
 
 function App() {
+
   const originals = [
     ["Better Off Without Me", "/audio/originals/Better Off Without Me.mp3"],
     ["Beyond the Veil", "/audio/originals/Beyond the Veil.mp3"],
@@ -20,17 +40,27 @@ function App() {
 
   return (
     <div className="site">
+
       <div className="bg-glow" />
       <div className="bg-streak" />
 
       <header className="header">
-        <a className="brand" href="#top" aria-label="Scraping Penny home">
-          <span className="brand-icon"><Flame size={22} /></span>
+        <a className="brand" href="#top">
+          <span className="brand-icon">
+            <Flame size={22} />
+          </span>
+
           <span>
-            <span className="brand-title">SCRAPING PENNY</span>
-            <span className="brand-subtitle">Official Band Site</span>
+            <span className="brand-title">
+              SCRAPING PENNY
+            </span>
+
+            <span className="brand-subtitle">
+              Official Band Site
+            </span>
           </span>
         </a>
+
         <nav className="nav">
           <a href="#music">Music</a>
           <a href="#shows">Shows</a>
@@ -41,106 +71,287 @@ function App() {
       </header>
 
       <main id="top">
+
+        {/* HERO */}
         <section className="hero">
-          <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="hero-copy">
-            <p className="eyebrow">2026 Official Launch</p>
-            <h1>90's & 00's Hard Rock Forged in Fire</h1>
-            <p className="lead">Scraping Penny is a 90s and 2000s hard rock cover band with original heavy metal music, a dark molten-metal visual style, grinding riffs, thunderous rhythm, and a high-voltage stage presence.</p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            className="hero-copy"
+          >
+
+            <p className="eyebrow">
+              2026 Official Launch
+            </p>
+
+            <h1>
+              90's & 00's Hard Rock Forged In Fire
+            </h1>
+
+            <p className="lead">
+              Scraping Penny is a 90s and 2000s hard rock cover band
+              with original heavy metal music, grinding riffs,
+              thunderous rhythm, and a high-voltage stage presence.
+            </p>
+
             <div className="actions">
-              <Button href="#music"><PlayCircle size={20} /> Listen Now</Button>
-              <Button href="#shows" variant="outline">View Shows</Button>
+              <Button href="#music">
+                <PlayCircle size={20} />
+                Listen Now
+              </Button>
+
+              <Button href="#shows" variant="outline">
+                View Shows
+              </Button>
             </div>
+
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.1 }} className="hero-image-wrap">
-           <div className="hero-image-glow" />
-<img src="/scraping-penny-official-band-picture-2026.jpeg" alt="Scraping Penny official 2026 band picture" className="hero-image" />
-<div className="spark-layer">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="hero-image-wrap"
+          >
 
-        <section id="music" className="section">
-          <p className="eyebrow">Original Music</p>
-          <h2>Scraping Penny Originals</h2>
-          <div className="cards two">
-            {originals.map(([title, src]) => (
-              <article className="card" key={title}>
-                <Music className="card-icon" size={34} />
-                <h3>{title}</h3>
-                <audio controls className="audio-player">
-                  <source src={src} type="audio/mpeg" />
-                </audio>
-              </article>
-            ))}
-          </div>
-        </section>
+            <div className="hero-image-glow" />
 
-        <section id="shows" className="section">
-          <p className="eyebrow">Tour</p>
-          <h2>Upcoming Shows</h2>
-          <div className="show-list">
-            <div className="show-row">
-              <span><CalendarDays size={20} /> Show Dates Coming Soon</span>
-              <Button variant="outline">Tickets Soon</Button>
+            <img
+              src="/scraping-penny-official-band-picture-2026.jpeg"
+              alt="Scraping Penny official 2026 band picture"
+              className="hero-image"
+            />
+
+            {/* Animated Sparks */}
+            <div className="spark-layer">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-          </div>
+
+          </motion.div>
+
         </section>
 
+        {/* ORIGINAL MUSIC */}
+        <section id="music" className="section">
+
+          <p className="eyebrow">
+            Original Music
+          </p>
+
+          <h2>
+            Scraping Penny Originals
+          </h2>
+
+          <div className="cards two">
+
+            {originals.map(([title, src]) => (
+
+              <article className="card" key={title}>
+
+                <Music
+                  className="card-icon"
+                  size={34}
+                />
+
+                <h3>{title}</h3>
+
+                <audio
+                  controls
+                  className="audio-player"
+                >
+                  <source
+                    src={src}
+                    type="audio/mpeg"
+                  />
+                </audio>
+
+              </article>
+
+            ))}
+
+          </div>
+
+        </section>
+
+        {/* SHOWS */}
+        <section id="shows" className="section">
+
+          <p className="eyebrow">
+            Tour
+          </p>
+
+          <h2>
+            Upcoming Shows
+          </h2>
+
+          <div className="show-list">
+
+            <div className="show-row">
+
+              <span>
+                <CalendarDays size={20} />
+                Show Dates Coming Soon
+              </span>
+
+              <Button variant="outline">
+                Tickets Soon
+              </Button>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        {/* LIVE SNIPPETS */}
         <section id="live-snippets" className="section">
-          <p className="eyebrow">Live in Atlanta</p>
-          <h2>Live and Cover Gig Sound Snippets</h2>
+
+          <p className="eyebrow">
+            Live In Atlanta
+          </p>
+
+          <h2>
+            Sound Snippets
+          </h2>
+
           <div className="cards two">
+
             <article className="card">
-              <h3>Live at La Estacion — Cinco de Mayo 2026</h3>
-              <p>Raw live bar recording from a recent Scraping Penny performance in Southwest Atlanta.</p>
-              <audio controls className="audio-player">
-                <source src="/audio/live/la-estacion-live-snippet.mp3" type="audio/mpeg" />
+
+              <h3>
+                Live at La Estacion — Cinco de Mayo 2026
+              </h3>
+
+              <p>
+                Raw live bar recording from a recent
+                Scraping Penny performance in Southwest Atlanta.
+              </p>
+
+              <audio
+                controls
+                className="audio-player"
+              >
+                <source
+                  src="/audio/live/la-estacion-live-snippet.mp3"
+                  type="audio/mpeg"
+                />
               </audio>
+
             </article>
 
             <article className="card">
-              <h3>More Atlanta Live Snippets Coming Soon</h3>
-              <p>Additional live cover-band performances and promo clips from Atlanta-area venues will be added here.</p>
+
+              <h3>
+                More Atlanta Live Snippets Coming Soon
+              </h3>
+
+              <p>
+                Additional live cover-band performances and promo clips
+                from Atlanta-area venues will be added here.
+              </p>
+
             </article>
+
           </div>
+
         </section>
 
+        {/* MEDIA */}
         <section id="media" className="section">
-          <p className="eyebrow">Media</p>
-          <h2>Photos & Video</h2>
+
+          <p className="eyebrow">
+            Media
+          </p>
+
+          <h2>
+            Photos & Video
+          </h2>
+
           <div className="cards two">
+
             <article className="card media-card">
-              <img src="/scraping-penny-official-band-picture-2026.jpeg" alt="Scraping Penny official 2026 band picture" />
-              <h3>Official 2026 Band Picture</h3>
-              <p>The official 2026 Scraping Penny band image is the primary website hero and press image.</p>
+
+              <img
+                src="/scraping-penny-official-band-picture-2026.jpeg"
+                alt="Scraping Penny official band image"
+              />
+
+              <h3>
+                Official 2026 Band Picture
+              </h3>
+
+              <p>
+                The official 2026 Scraping Penny promotional image.
+              </p>
+
             </article>
+
             <article className="card">
-              <h3>Video / Promo Reel</h3>
-              <p>Embed YouTube, live clips, rehearsal footage, or a teaser trailer here when available.</p>
+
+              <h3>
+                Video / Promo Reel
+              </h3>
+
+              <p>
+                Live YouTube videos and promo clips coming soon.
+              </p>
+
             </article>
+
           </div>
+
         </section>
 
-        <section id="contact" className="section contact-box">
-          <p className="eyebrow">Booking & Contact</p>
-          <h2>Bring Scraping Penny to the Stage</h2>
-          <p>For booking, press, venue inquiries, and collaborations, contact the band directly at <a href="mailto:sjames.atlanta@gmail.com">sjames.atlanta@gmail.com</a>.</p>
+        {/* CONTACT */}
+        <section
+          id="contact"
+          className="section contact-box"
+        >
+
+          <p className="eyebrow">
+            Booking & Contact
+          </p>
+
+          <h2>
+            Bring Scraping Penny To The Stage
+          </h2>
+
+          <p>
+            For booking, venue inquiries, and collaborations,
+            contact the band directly at{" "}
+            <a href="mailto:sjames.atlanta@gmail.com">
+              sjames.atlanta@gmail.com
+            </a>
+          </p>
+
           <div className="actions">
-            <Button href="mailto:sjames.atlanta@gmail.com"><Mail size={20} /> Email Booking</Button>
-            <Button variant="outline">EPK Coming Soon</Button>
+
+            <Button href="mailto:sjames.atlanta@gmail.com">
+              <Mail size={20} />
+              Email Booking
+            </Button>
+
+            <Button variant="outline">
+              EPK Coming Soon
+            </Button>
+
           </div>
-          <div className="socials" aria-label="Social links coming soon">
-            <span>Social Links Coming Soon</span>
-          </div>
+
         </section>
+
       </main>
 
-      <footer>© 2026 Scraping Penny. All rights reserved. scrapingpenny.com</footer>
+      <footer>
+        © 2026 Scraping Penny — scrapingpenny.com
+      </footer>
+
     </div>
   );
 }
