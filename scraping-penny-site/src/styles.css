@@ -213,8 +213,10 @@ h2 {
 .hero-image {
   position: relative;
   width: 100%;
-  height: clamp(520px, 52vw, 760px);
-  object-fit: cover;
+  height: auto;
+  max-height: 760px;
+  object-fit: contain;
+  object-position: center;
   border-radius: 32px;
   border: 1px solid rgba(249,115,22,.36);
   box-shadow: 0 30px 90px rgba(67,20,7,.75);
