@@ -87,7 +87,7 @@ function App() {
 
         <section id="live-snippets" className="section">
           <p className="eyebrow">Live in Atlanta</p>
-          <h2>Sound Snippets</h2>
+          <h2>Live and Cover Gig Sound Snippets</h2>
           <div className="cards two">
             <article className="card">
               <h3>Live at La Estacion — Cinco de Mayo 2026</h3>
