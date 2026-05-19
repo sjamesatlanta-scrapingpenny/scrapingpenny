@@ -167,7 +167,7 @@ function App() {
           <p className="eyebrow">Booking & Contact</p>
           <h2>Bring Scraping Penny To The Stage</h2>
           <p>
-            For booking, venue inquiries, and collaborations, contact the band directly at{" "}
+            For booking, venue inquiries, and collaborations, contact Stephen James directly at 404,307.6038 or{" "}
             <a href="mailto:sjames.atlanta@gmail.com">sjames.atlanta@gmail.com</a>
           </p>
 
