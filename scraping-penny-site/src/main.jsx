@@ -232,7 +232,7 @@ function App() {
 
               <p>
                 Raw live bar recording from a recent
-                Scraping Penny performance in Southwest Atlanta.
+                cover gig with Scraping Penny performaning all the Dad Rock 90s Hits in Southwest Atlanta.
               </p>
 
               <audio
