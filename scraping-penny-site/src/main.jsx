@@ -52,16 +52,44 @@ function App() {
         <section id="music" className="section">
           <p className="eyebrow">Music</p>
           <h2>Latest Releases</h2>
-          <div className="cards three">
-            {['Music Coming Soon', 'Streaming Links Coming Soon', 'Video Coming Soon'].map((title) => (
-              <article className="card" key={title}>
-                <Music className="card-icon" size={34} />
-                <h3>{title}</h3>
-                <p>Spotify, Apple Music, YouTube, Bandcamp, and other official music links will be added here soon.</p>
-              </article>
-            ))}
-          </div>
-        </section>
+          <div className="cards two">
+
+  <article className="card">
+    <h3>Original Track 1</h3>
+    <audio controls className="audio-player">
+      <source src="/audio/originals/Better Off Without Me.mp3" type="audio/mpeg" />
+    </audio>
+  </article>
+
+  <article className="card">
+    <h3>Original Track 2</h3>
+    <audio controls className="audio-player">
+      <source src="/audio/originals/Beyond the Veil.mp3" type="audio/mpeg" />
+    </audio>
+  </article>
+
+  <article className="card">
+    <h3>Original Track 3</h3>
+    <audio controls className="audio-player">
+      <source src="/audio/originals/Mean Green Machine.mp3" type="audio/mpeg" />
+    </audio>
+  </article>
+
+  <article className="card">
+    <h3>Original Track 4</h3>
+    <audio controls className="audio-player">
+      <source src="/audio/originals/Persecuted.mp3" type="audio/mpeg" />
+    </audio>
+  </article>
+
+  <article className="card">
+    <h3>Original Track 5</h3>
+    <audio controls className="audio-player">
+      <source src="/audio/originals/Walking Into the Son.mp3" type="audio/mpeg" />
+    </audio>
+  </article>
+
+</div>
 
         <section id="shows" className="section">
           <p className="eyebrow">Tour</p>
